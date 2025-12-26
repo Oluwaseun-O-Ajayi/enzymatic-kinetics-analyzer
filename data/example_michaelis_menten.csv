@@ -1,0 +1,9 @@
+substrate_concentration_uM,initial_velocity
+1,0.12
+2,0.21
+5,0.41
+10,0.63
+20,0.78
+50,0.92
+100,0.98
+200,1.01

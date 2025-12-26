@@ -1,0 +1,9 @@
+enzyme,condition,substrate_concentration_uM,initial_velocity
+EnzA,pH7,0.5,0.06
+EnzA,pH7,1,0.11
+EnzA,pH7,5,0.37
+EnzA,pH8,0.5,0.08
+EnzA,pH8,1,0.15
+EnzB,WT,0.5,0.04
+EnzB,WT,1,0.09
+EnzB,Mutant,1,0.20
