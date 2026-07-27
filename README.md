@@ -1,15 +1,44 @@
-# Enzymatic Kinetics Analyzer ⚗️📊
+# Enzymatic Kinetics Analyzer
 
-**Python-based toolkit for comprehensive enzymatic kinetics and IC50 analysis, designed for bioanalytical chemistry, enzymology, and pharmaceutical research workflows.**
+**Open-source Python toolkit for reproducible enzymatic kinetics and dose–response analysis**
+
+**The framework provides Michaelis–Menten parameter estimation, 4-parameter logistic (4PL) IC50 modeling, confidence interval calculation, batch processing workflows, publication-quality visualization, and report generation for enzymology, bioanalytical chemistry, and pharmaceutical research applications**
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🎯 Overview
+## Overview
 
-This toolkit provides robust, reproducible analysis pipelines for both single-enzyme and batch experiments, with a focus on scalability, precision, and real-world applicability. It is intended for academic research, pharmaceutical screening, and industrial biotechnology applications.
+Enzymatic Kinetics Analyzer is a reproducible computational workflow for analyzing enzyme kinetics and inhibitor potency data
 
-## 🚀 Key Features
+The software integrates:
+
+- Michaelis–Menten kinetic modeling
+- IC50 and dose-response analysis
+- Confidence interval estimation
+- Replicate-aware statistical analysis
+- Batch processing workflows
+- Publication-quality figure generation
+- Automated PDF reporting
+
+The framework is intended for educational, academic, industrial, and pharmaceutical research environments where transparent and reproducible enzyme characterization workflows are required
+
+## Scope and Intended Use
+
+This repository provides computational workflows for enzyme kinetic characterization and inhibitor potency analysis
+
+The software performs:
+
+- Model fitting
+- Statistical analysis
+- Visualization
+- Reporting
+
+The repository does not replace experimental validation or laboratory quality systems
+
+Users are responsible for validating fitted parameters, assay quality, and experimental assumptions before applying results to regulated or decision-critical workflows
+
+## Key Features
 
 * **Nonlinear Michaelis–Menten fitting** for accurate estimation of Vmax and Km  
 * **4-Parameter Logistic (4PL) IC50 analysis**, including support for replicates  
@@ -19,7 +48,7 @@ This toolkit provides robust, reproducible analysis pipelines for both single-en
 * **Extensible Python framework** to integrate additional models, metrics, or automated reporting  
 * **Replicates support** with automatic calculation of mean ± standard deviation for reliable experimental interpretation  
 
-## ⚡ Quick Start
+## Quick Start
 
 ### Installation
 
@@ -48,7 +77,7 @@ python run_ic50_analysis.py
 python generate_pdf_report.py
 ```
 
-## 📋 Requirements
+## Requirements
 
 ```
 numpy>=1.20.0
@@ -58,11 +87,11 @@ scipy>=1.7.0
 reportlab>=3.6.0
 ```
 
-## 🧩 Key Concepts
+## Key Concepts
 
 ### Michaelis–Menten Kinetics
 
-Michaelis–Menten kinetics describe the relationship between substrate concentration and enzyme-catalyzed reaction rate.
+Michaelis–Menten kinetics describe the relationship between substrate concentration and enzyme-catalyzed reaction rate
 
 * **Vmax (Maximum Velocity):** Maximum reaction rate under saturating substrate  
 * **Km (Michaelis Constant):** Substrate concentration at half-maximal velocity; indicates enzyme affinity  
@@ -79,7 +108,7 @@ v = (Vmax × [S]) / (Km + [S])
 
 ### IC50 and Dose-Response
 
-**IC50** is the inhibitor concentration that reduces enzyme activity by 50%.
+**IC50** is the inhibitor concentration that reduces enzyme activity by 50%
 
 * **Low IC50** → potent inhibitor  
 * **High IC50** → weak inhibitor  
@@ -104,7 +133,7 @@ y = Bottom + (Top - Bottom) / (1 + (x/IC50)^HillSlope)
 * Mean ± standard deviation and confidence intervals included  
 * Facilitates reproducible comparisons across experimental conditions or compounds  
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 enzymatic-kinetics-analyzer/
@@ -124,7 +153,7 @@ enzymatic-kinetics-analyzer/
 └── README.md                    # This file
 ```
 
-## 📝 Data Format
+## Data Format
 
 ### Michaelis–Menten (single enzyme)
 
@@ -146,7 +175,7 @@ DrugB,90,88,91,89,90,87,85,84,86
 DrugC,85,87,86,83,82,84,80,81,79
 ```
 
-## 💻 Usage Examples
+## Usage Examples
 
 ### Single Enzyme Analysis
 
@@ -218,7 +247,7 @@ All outputs include:
 * R² values for goodness of fit
 * Publication-quality formatting
 
-## 🔬 Workflow Diagram
+## Workflow Diagram
 
 ```
 ┌───────────────┐
@@ -267,7 +296,7 @@ All outputs include:
 └─────────────────────┘
 ```
 
-## 🎯 Real-World Applications
+## Research Applications
 
 ### Drug Discovery
 * **Inhibitor screening** - Rank drug candidates by IC50
@@ -289,10 +318,10 @@ All outputs include:
 * **Structure-function** - Relate activity to structure
 * **Publication** - Generate figures and data tables
 
-## ⚠️ Troubleshooting
+## Troubleshooting
 
 ### Fonts Issue (PDF Reports)
-Ensure `DejaVuSans.ttf` is in `fonts/` directory and not read-only for proper Unicode support in PDF reports.
+Ensure `DejaVuSans.ttf` is in `fonts/` directory and not read-only for proper Unicode support in PDF reports
 
 ```bash
 # Check if font exists
@@ -314,7 +343,7 @@ ls fonts/DejaVuSans.ttf
 pip install -r requirements.txt --upgrade
 ```
 
-## 🛠️ Customization
+## Customization
 
 ### Modify Fitting Parameters
 
@@ -332,18 +361,20 @@ Extend the analysis by adding:
 * Custom error models
 * Additional statistical tests
 
-## 🌐 Professional Context
+## Reproducible Research
 
-This toolkit is designed to **bridge research and industry needs**:
+The software emphasizes transparent workflows, traceable outputs, and reproducible analysis practices
 
-* Automated, reproducible workflows for **high-throughput enzyme screening**
-* Supports **drug discovery pipelines** with rigorous IC50 and kinetic analysis
-* Facilitates **data-driven decision-making** with clear outputs, plots, and replicate management
-* Extensible for integration into **automated lab systems** or proprietary analytics pipelines
+Generated outputs include:
 
-Positions the user as a **valuable contributor to bioanalytical, pharmaceutical, or biotech teams**, combining technical expertise, analytical rigor, and software-driven efficiency.
+- Figures
+- CSV result tables
+- Statistical summaries
+- PDF reports
 
-## 🤝 Contributing
+These outputs help researchers document and communicate kinetic and pharmacological analyses
+
+## Contributing
 
 Contributions welcome! Areas for enhancement:
 * Additional kinetic models (e.g., competitive/non-competitive inhibition)
@@ -352,17 +383,17 @@ Contributions welcome! Areas for enhancement:
 * Web interface for analysis
 * Integration with LIMS systems
 
-## 📄 License
+## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 * Developed for enzymology and pharmaceutical research
 * Thanks to the scientific Python community (NumPy, SciPy, Matplotlib)
 * Inspired by industry-standard enzyme kinetics software
 
-## 📧 Contact
+## Contact
 
 **Oluwaseun O. Ajayi**  
 PhD Researcher, Chemistry  
@@ -373,11 +404,25 @@ Bioanalytical & Structural Chemistry | Enzymology | Lab Automation
 - **Academic Email**: oluwaseun.ajayi@uga.edu
 - **Personal Email**: seunolanikeajayi@gmail.com
 
-## 📖 Citation
+## Publication
+
+Associated manuscript:
+
+Ajayi OO.
+
+Enzymatic Kinetics Analyzer: A Reproducible Python Workflow for Michaelis–Menten and IC50 Analysis
+
+Manuscript in preparation
+
+## Citation
 
 If you use this toolkit in your research:
 
 ```bibtex
+@software{ajayi2026eka,
+ ...
+ doi={actual DOI}
+}
 @software{enzymatic_kinetics_analyzer,
   author = {Oluwaseun O. Ajayi},
   title = {Enzymatic Kinetics Analyzer},
@@ -385,7 +430,36 @@ If you use this toolkit in your research:
   url = {https://github.com/Oluwaseun-O-Ajayi/enzymatic-kinetics-analyzer}
 }
 ```
+## Validation and Interpretation
+
+Model quality should always be evaluated alongside experimental design, assay integrity, and goodness-of-fit metrics
+
+Recommended practices include:
+
+- Inspect fitted curves visually
+- Review confidence intervals
+- Verify concentration ranges
+- Compare replicate consistency
+- Confirm biological plausibility
+
+Software outputs should support, not replace, scientific judgment
+
+## Scientific Software Contribution
+
+The primary contribution of this repository is a reusable software workflow for enzymatic data analysis
+
+Implemented capabilities include:
+
+- Nonlinear Michaelis–Menten fitting
+- 4-parameter logistic dose–response fitting
+- Confidence interval estimation
+- Replicate-aware statistics
+- Batch processing
+- Automated figure generation
+- Automated PDF report creation
+
+The framework is designed to improve reproducibility and accessibility of enzymatic data analysis
 
 ---
 
-**Made with ❤️ for enzymology and pharmaceutical research**
+**Advancing reproducible enzymatic data analysis through open scientific software**
