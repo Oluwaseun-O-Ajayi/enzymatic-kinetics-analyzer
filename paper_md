@@ -1,0 +1,69 @@
+---
+title: 'Enzymatic Kinetics Analyzer: An Open-Source Workflow for Reproducible Enzyme Kinetics and Dose-Response Analysis in Resource-Limited Research Environments'
+tags:
+  - Python
+  - enzymology
+  - enzyme kinetics
+  - Michaelis-Menten
+  - IC50
+  - dose-response
+  - biochemical analysis
+  - reproducible research
+authors:
+  - name: Oluwaseun O. Ajayi
+    orcid: PUT-ORCID-HERE
+    affiliation: 1
+affiliations:
+ - name: Department of Chemistry, University of Georgia, Athens, Georgia, USA
+   index: 1
+date: 2026-XX-XX
+bibliography: paper.bib
+---
+
+# Summary
+
+Enzyme kinetic characterization and inhibitor potency analysis are routine components of biochemical, pharmaceutical, biotechnology, and academic enzymology research. These analyses commonly involve estimation of kinetic parameters such as Vmax and Km, as well as dose-response parameters such as IC50 values. In practice, however, many researchers perform these steps across fragmented workflows involving spreadsheets, commercial software, custom scripts, and manually generated figures. This fragmentation can create barriers to reproducibility, especially for students, small academic laboratories, teaching laboratories, and research groups with limited access to commercial data-analysis tools.
+
+`Enzymatic Kinetics Analyzer` is an open-source Python toolkit designed to provide a reproducible workflow for common enzymology data-analysis tasks. The software supports Michaelis-Menten kinetic fitting, four-parameter logistic dose-response modeling for IC50 estimation, replicate-aware analysis, batch processing, confidence interval estimation, generation of publication-quality figures, tabulated CSV outputs, and automated PDF report generation. Input data are provided through simple CSV files, allowing users to analyze single experiments or batches of enzyme and inhibitor datasets through script-based workflows.
+
+The package is intended for researchers who need transparent and reproducible analysis pipelines without dependence on proprietary software. It can be used for academic enzymology instruction, biochemical assay analysis, inhibitor screening, enzyme-engineering comparisons, and early-stage pharmaceutical research workflows. By combining established kinetic models with an accessible computational implementation, `Enzymatic Kinetics Analyzer` helps make enzymology analysis more reproducible and more available to researchers operating with limited computational or financial resources.
+
+# Statement of need
+
+Enzyme kinetic analysis is often introduced early in chemistry, biochemistry, and pharmacology training, but practical data analysis can remain highly manual. Students and researchers may estimate kinetic parameters using spreadsheets, graphical software, commercial packages, or isolated scripts. While these approaches can be effective, they may also create challenges when analyses must be repeated, shared, audited, or scaled across multiple enzymes, inhibitors, concentrations, or experimental conditions.
+
+Commercial tools provide strong curve-fitting functionality, but access may depend on institutional licensing or individual laboratory resources. At the same time, custom code written for a single project may lack documentation, standardized outputs, or reusable reporting. These issues are particularly important in environments where researchers need to process multiple datasets, compare enzyme variants or inhibitor responses, preserve analysis provenance, and generate figures or reports suitable for communication.
+
+`Enzymatic Kinetics Analyzer` addresses this need by providing a single open-source workflow for core enzymology analyses. The software implements nonlinear Michaelis-Menten fitting for Vmax and Km estimation, four-parameter logistic fitting for IC50 analysis, mean and standard deviation handling for replicate measurements, batch processing across multiple enzymes or inhibitors, confidence interval calculation, plot generation, CSV result export, and PDF report assembly. These features are designed to reduce manual transfer of data between tools and to support transparent, repeatable analysis from input data to final output.
+
+The software does not propose a new kinetic theory or replace expert interpretation of enzymology experiments. Instead, it provides an accessible, script-driven implementation of commonly used analysis workflows in a form that is reusable, inspectable, and adaptable by researchers, educators, and laboratories with limited resources.
+
+# Software functionality
+
+The package currently includes modules and scripts for:
+
+- Michaelis-Menten curve fitting from substrate concentration and initial velocity data.
+- IC50 analysis using a four-parameter logistic dose-response model.
+- Confidence interval estimation from fitted parameter covariance matrices.
+- Batch fitting of multiple enzyme-condition datasets.
+- Batch IC50 analysis across multiple inhibitors.
+- Replicate-aware IC50 analysis using mean response and standard deviation.
+- Generation of figures for Michaelis-Menten and dose-response curves.
+- Export of fitted parameters to CSV files.
+- Automated PDF report generation combining fitted results and figures.
+
+Example datasets are included to demonstrate expected input formats for Michaelis-Menten analysis, single IC50 analysis, batch IC50 analysis, and replicate-containing IC50 workflows. The outputs include kinetic parameter tables, inhibitor-response tables, dose-response visualizations, and an assembled analysis report suitable for sharing or further refinement.
+
+# Research applications
+
+`Enzymatic Kinetics Analyzer` is applicable to several common research and teaching scenarios, including enzyme-mechanism studies, enzyme-variant comparison, inhibitor screening, biochemical assay optimization, educational demonstrations of kinetic fitting, and reproducibility-focused computational training. Because the workflow is file-based and script-driven, it can also be adapted for integration into larger automated laboratory or data-processing pipelines.
+
+# Limitations
+
+The software is intended to support reproducible data analysis, not to replace experimental judgment. Users remain responsible for evaluating data quality, replicate consistency, concentration-range coverage, model suitability, and biological interpretation. The included datasets are demonstration examples designed to show input formats and output behavior; they should not be interpreted as biological claims about specific enzymes or compounds.
+
+# Acknowledgements
+
+The author acknowledges the scientific Python ecosystem, including NumPy, SciPy, pandas, and Matplotlib, which provide foundational tools for numerical computation, optimization, data handling, and visualization. The development of this software was motivated by practical enzymology analysis needs encountered during chemistry graduate research and by the broader need for accessible computational tools in resource-limited research environments.
+
+# References
