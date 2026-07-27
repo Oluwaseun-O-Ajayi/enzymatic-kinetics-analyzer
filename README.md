@@ -229,7 +229,7 @@ python generate_pdf_report.py
 * Publication-ready with plots and tables
 * Unicode support for special characters
 
-## 📊 Output Files
+## Output Files
 
 ### Results Tables
 * `results/batch_kinetics_results.csv` - Vmax, Km for all enzymes
