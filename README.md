@@ -408,28 +408,33 @@ Bioanalytical & Structural Chemistry | Enzymology | Lab Automation
 
 Associated manuscript:
 
-Ajayi OO.
+Ajayi, O. O.
 
-Enzymatic Kinetics Analyzer: A Reproducible Python Workflow for Michaelis–Menten and IC50 Analysis
+Enzymatic Kinetics Analyzer: An Open-Source Workflow for Reproducible Enzyme Kinetics and Dose-Response Analysis in Resource-Limited Research Environments
 
 Manuscript in preparation
 
 ## Citation
 
-If you use this toolkit in your research:
+If you use this software, please cite:
 
 ```bibtex
 @software{ajayi2026eka,
- ...
- doi={actual DOI}
-}
-@software{enzymatic_kinetics_analyzer,
-  author = {Oluwaseun O. Ajayi},
+  author = {Ajayi, Oluwaseun O.},
   title = {Enzymatic Kinetics Analyzer},
-  year = {2024},
-  url = {https://github.com/Oluwaseun-O-Ajayi/enzymatic-kinetics-analyzer}
+  version = {1.0.0},
+  year = {2026},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.21652522},
+  url = {https://doi.org/10.5281/zenodo.21652522}
 }
 ```
+
+### APA Style
+
+Ajayi, O. O. (2026). *Enzymatic Kinetics Analyzer* (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.21652522
+
+
 ## Validation and Interpretation
 
 Model quality should always be evaluated alongside experimental design, assay integrity, and goodness-of-fit metrics
