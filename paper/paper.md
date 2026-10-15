@@ -1,5 +1,5 @@
 ---
-title: 'Enzymatic Kinetics Analyzer: Michaelis-Menten, dose-response and inhibition-model fitting with honest uncertainties in Python'
+title: 'Enzymatic Kinetics Analyzer: Michaelis-Menten, dose-response and inhibition-model fitting with t-based confidence intervals in Python'
 tags:
   - Python
   - enzymology
@@ -49,7 +49,7 @@ The package gives laboratories and courses a tested, open Python route from raw 
 
 # AI usage disclosure
 
-Generative AI (Claude, Anthropic) was used in October 2026 to review version 1, design and write the version 2 package, its tests and continuous-integration configuration, revise the documentation and example data, and draft this paper. The author reviewed every change, ran the tests and examples, checked all references against their sources, and made the design decisions.
+Claude Opus 5.5 (Anthropic) was used in October 2026 for code review, rewriting the package for version 2, test writing and revision of this paper. The author reviewed, ran and verified all changes and takes full responsibility for the software and the paper.
 
 # Acknowledgements
 
