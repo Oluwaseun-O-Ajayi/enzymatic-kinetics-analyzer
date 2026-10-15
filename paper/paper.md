@@ -49,6 +49,6 @@ The package gives laboratories and courses a tested, open Python route from raw 
 
 # Acknowledgements
 
-[Funding statement, or: This work received no specific external funding.]
+This work was conducted independently and received no specific funding from any agency in the public, commercial, or not-for-profit sectors.
 
 # References
