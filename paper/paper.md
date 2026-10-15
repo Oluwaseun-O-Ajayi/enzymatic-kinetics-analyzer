@@ -53,6 +53,6 @@ Generative AI (Claude, Anthropic) was used in October 2026 to review version 1, 
 
 # Acknowledgements
 
-[Funding statement, or: This work received no specific external funding.]
+This work was conducted independently and received no specific funding from any agency in the public, commercial, or not-for-profit sectors.
 
 # References
