@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.1 (2026-10)
+
+### Changed
+- Paper: added an AI usage disclosure.
+
 ## 2.0.0 (2026-10)
 
 Version 2 replaces the script collection of version 1 with an installable package, `enzyme_kinetics`. The scripts in the repository root and the `src/` folder were removed; their tasks are covered by `examples/`.

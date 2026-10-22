@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "enzymatic-kinetics-analyzer"
-version = "2.0.0"
+version = "2.0.1"
 description = "Michaelis-Menten, dose-response and inhibition-model fitting with t-based confidence intervals, replicate-aware batch processing and model comparison"
 readme = "README.md"
 license = { text = "MIT" }

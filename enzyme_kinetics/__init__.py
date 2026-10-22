@@ -11,7 +11,7 @@ from .fitting import (FitResult, compare_inhibition_models, fit_dose_response, f
 from .io import read_compound_table, read_replicate_table
 from .models import competitive, four_parameter_logistic, michaelis_menten, mixed, uncompetitive
 
-__version__ = "2.0.0"
+__version__ = "2.0.1"
 
 __all__ = [
     "FitResult", "fit_michaelis_menten", "fit_dose_response", "fit_inhibition",
