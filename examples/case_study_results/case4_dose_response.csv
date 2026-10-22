@@ -1,0 +1,4 @@
+compound,IC50,IC50_ci_low,IC50_ci_high,hill,bottom,top,n,note
+DrugA,0.163,0.102,0.262,1.734,57.609,95.295,12,fewer than two concentrations on one side of the IC50
+DrugB,0.088,0.083,0.093,4.106,48.968,89.672,12,steep Hill slope; check the concentration spacing
+DrugC,0.071,0.062,0.081,0.898,8.629,99.371,12,plateau extrapolated beyond the data; consider fixing bottom or top

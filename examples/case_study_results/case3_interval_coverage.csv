@@ -1,0 +1,3 @@
+points,simulations,coverage_t,coverage_normal,nominal
+6,1000,0.908,0.808,0.95
+8,1000,0.943,0.884,0.95

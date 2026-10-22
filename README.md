@@ -48,7 +48,7 @@ ic = ek.fit_dose_response(reps["concentration"], reps["response"])
 print(ic.derived["IC50"])  # value and asymmetric 95% interval
 ```
 
-Worked examples: `examples/michaelis_menten.py`, `examples/dose_response.py`, `examples/inhibition.py` and `examples/report.py`. The bundled data are illustrative or simulated with known parameters (see `data/README.md`); they are not measurements of specific enzymes or compounds.
+Worked examples: `examples/michaelis_menten.py`, `examples/dose_response.py`, `examples/inhibition.py` and `examples/report.py`. Four reproducible case studies that check the package against known answers are described in [`examples/CASE_STUDIES.md`](examples/CASE_STUDIES.md). The bundled data are illustrative or simulated with known parameters (see `data/README.md`); they are not measurements of specific enzymes or compounds.
 
 ## Testing
 

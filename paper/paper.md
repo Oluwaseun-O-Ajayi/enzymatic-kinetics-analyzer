@@ -45,7 +45,7 @@ The test suite checks exact parameter recovery from noise-free data, the t-based
 
 # Research impact statement
 
-The package gives laboratories and courses a tested, open Python route from raw rates to kinetic parameters with correctly sized uncertainties, and makes the choice between inhibition mechanisms explicit. \autoref{fig:coverage}b shows why this matters at typical sample sizes: with six to eight substrate concentrations, normal-distribution intervals covered the true Km in fewer than 90% of simulated experiments, against a nominal 95%.
+The package gives laboratories and courses a tested, open Python route from raw rates to kinetic parameters with correctly sized uncertainties, and makes the choice between inhibition mechanisms explicit. \autoref{fig:coverage}b shows why this matters at typical sample sizes: with six to eight substrate concentrations, normal-distribution intervals covered the true Km in fewer than 90% of simulated experiments, against a nominal 95%. Four reproducible case studies (`examples/CASE_STUDIES.md`) check parameter recovery, mechanism identification, interval coverage and dose-response diagnostics against known answers.
 
 # AI usage disclosure
 

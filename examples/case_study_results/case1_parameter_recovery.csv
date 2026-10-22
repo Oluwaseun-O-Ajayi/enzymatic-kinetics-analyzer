@@ -1,0 +1,9 @@
+enzyme,condition,parameter,true,fitted,ci_low,ci_high,truth_in_ci
+EnzA,pH7,Vmax,1.0,1.034,0.98,1.088,True
+EnzA,pH7,Km,5.0,5.086,4.16,6.012,True
+EnzA,pH8,Vmax,1.4,1.409,1.363,1.454,True
+EnzA,pH8,Km,3.0,3.009,2.632,3.387,True
+EnzB,WT,Vmax,0.8,0.864,0.831,0.897,False
+EnzB,WT,Km,10.0,10.882,9.678,12.086,True
+EnzB,Mutant,Vmax,0.8,0.821,0.768,0.875,True
+EnzB,Mutant,Km,25.0,25.616,21.893,29.339,True
